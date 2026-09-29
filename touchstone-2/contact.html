@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact</title>
+</head>
+<body>
+    <header><img src="assets/bakery-logo_c.png" alt="" width="200"></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Reach Out</h1>
+     <h3>How to find us</h3>
+    <p>We're open at our downtown location every day from 8am to 2pm</p>
+    <address>123 Main St, North Star, CA
+    </address>
+
+    <h3>Contact us</h3>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Your Information</legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="pickup_date">Pickup Date:</label>
+                <input type="date" id="pickup_date" name="pickup_date">
+            </div>
+
+            <div>
+                <label for="request_type">Request Type:</label>
+                <select id="request_type" name="request_type">
+                    <option value="pre-order">Pre-order</option>
+                    <option value="general-question">General Question</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="item_details">Item Details:</label>
+                <textarea id="item_details" name="item_details" rows="4" placeholder="Tell us what you are looking for..."></textarea>
+            </div>
+
+            <div>
+                <label for="allergy_notes">Allergy Notes (if applicable):</label>
+                <textarea id="allergy_notes" name="allergy_notes" rows="2" placeholder="List any known allergies."></textarea>
+            </div>
+
+            <button type="submit">Submit Request</button>
+        </fieldset>
+    </form>
+    <footer> &copy; North Start Bakery Co. 1996-2026</footer>
+</body>
+</html>
