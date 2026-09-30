@@ -1,0 +1,125 @@
+/* use some fonts from gogole */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;700;800&display=swap');
+
+/* body stuff */
+body {
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    color: #c09d84;
+}
+
+/* the header  */
+header {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+}
+
+header img {
+    width: 300px;
+}
+
+
+/* nav stuff */
+nav {
+    width: 100%;
+    border-bottom: 4px solid #c19e84;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.6rem;
+    background-color: #684637;
+    border-radius: 1em 1em 0 0;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin: auto 3px;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #c19e84;
+}
+
+/* js tab stuff */
+.tab-content {
+    display: none
+}
+
+
+/* page specific stuff */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-image {
+    position: relative;
+    display: inline-block;
+    width: 80%
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    object-fit: cover;
+    box-shadow: 0 .5rem rgba(128, 128, 192, .1);
+}
+
+.product-image button {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 1.5rem;
+    background-color: #c09d84;
+    border-radius: 1em 1em;
+    padding: 0.5rem 1rem;
+}
+
+.product-image button.favorite {
+    background-color: #684637;
+}
+
+@media (min-width: 768px) {
+    .products {
+        flex-direction: row;
+    }
+
+    .product-image {
+        width: 250px;
+    }
+}
+
+footer {
+    margin: 3em auto 8px auto;
+}
+
+/* form stuf */
+.error {
+    background-color: lightpink;
+}
