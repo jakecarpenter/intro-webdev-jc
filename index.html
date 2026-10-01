@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header><img src="assets/bakery-logo_c.png" alt="" width="200"></header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="selectTab(0)">Home</a></li>
+            <li><a href="#" onclick="selectTab(1)">About</a></li>
+            <li><a href="#" onclick="selectTab(2)">Products</a></li>
+            <li><a href="#" onclick="selectTab(3)">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main></main>
+
+    <div class="tab-content">
+        <div id="home-tab">
+            <h1>Welcome to North Star Bakery</h1>
+            <picture>
+                <img src="assets/bakery-storefront_c.png" alt="Image of North Star Bakery Front" width="350">
+            </picture>
+            <h2>Your local bakery since 1996</h2>
+            <p>Welcome to our neighborhood bakery. We sell breads, pastries, cakes, and more! All made right here,
+                locally,
+                in our
+                town.</p>
+            <h3>We're famous for our signature loaves, and our community mission.</h3>
+            <p>We're known locally as much for our baked goods as we are for our warm, handmade atmosphere. We believe
+                in
+                staying
+                local and giving back.</p>
+            <h3>How to find us</h3>
+            <p>We're open at our downtown location every day from 8am to 2pm</p>
+            <address>123 Main St, North Star, CA
+            </address>
+            <h3>Item of the week</h3>
+            <p>This week our featured item is our signature loaves. They're made with fresh ingredients and are perfect
+                for
+                any
+                occasion.</p>
+            <figure><img src="assets/bakery-signature-loaf_c.png" alt="fresh loaf of bread" width="350" />
+                <figcaption>Fresh loaf of bread</figcaption>
+            </figure>
+        </div>
+
+        <div id="about-tab">
+            <h1>Our Story</h1>
+            <img src="assets/bakery-storefront_c.png" alt="Image of North Star Bakery Front" width="350">
+            <h2>Your local bakery since 1996</h2>
+            <p>Welcome to our neighborhood bakery. We sell breads, pastries, cakes, and more! All made right here,
+                locally,
+                in our town. Our founders recognized the need for a local bakery using local ingredients and have been
+                making
+                delicious breads and other baked goods since then</p>
+
+            <h3> The Best ingredients</h3>
+            <p>We use only the freshest, highest quality ingredients to make our breads and pastries. We get almost all
+                of them
+                locally.</p>
+
+            <h3>The Best Staff</h3>
+            <p>Our small but mighty staff is dedicated to making the best baked goods possible. Our bakery manager Jim
+                has been
+                here
+                since the beginning.</p>
+
+            <h3>Behind the scenes video</h3>
+            <video width="350" autoplay="true" controls="true">
+                <source src="assets/bakery-behind-scenes_c.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="products-tab">
+            <h1>Our Products</h1>
+            <h2>Made with the freshest ingredients</h2>
+
+            <div class="products">
+                <div class="product">
+
+                    <h3>Signature Breads</h3>
+                    <div class="product-image">
+                        <button onclick="handleFavoriteClick(this)" data-product-id="0">Mark as favorite</button>
+                        <img src="assets/bakery-bread_c.png" alt="fresh loaf of bread" width="350" />
+                    </div>
+                    <details>
+                        <strong>Price:</strong> $7.00 - $21.00
+                        <p><strong>Description:</strong> Freshly baked, handcrafted bread that's perfect for any
+                            occasion</p>
+                    </details>
+
+                </div>
+                <div class="product">
+
+                    <h3>Amazing Pastries</h3>
+                    <div class="product-image">
+                        <button onclick="handleFavoriteClick(this)" data-product-id="1">Mark as favorite</button>
+                        <img src="assets/bakery-feature-large_c.png" alt="fresh loaf of bread" width="350" />
+                    </div>
+
+                    <details>
+                        <strong>Price:</strong> $2.00 - $11.00
+                        <p><strong>Description:</strong> Pastries made with the freshest ingredients and love.</p>
+                    </details>
+
+                </div>
+                <div class="product">
+
+                    <h3>Cakes and Cupcakes</h3>
+                    <div class="product-image">
+                        <button onclick="handleFavoriteClick(this)" data-product-id="2">Mark as favorite</button>
+                        <img src="assets/bakery-feature-small_c.png" alt="fresh loaf of bread" width="350" />
+                    </div>
+                    <details>
+                        <strong>Price:</strong> $7.00 - $200.00
+                        <p><strong>Description:</strong> The best cakes and cupcakes made with the freshest
+                            ingredients
+                            and
+                            care.</p>
+                    </details>
+
+                </div>
+                <div class="product">
+
+                    <h3>Custom Orders</h3>
+
+                    <div class="product-image">
+                        <button onclick="handleFavoriteClick(this)" data-product-id="3">Mark as favorite</button>
+                        <img src="assets/bakery-signature-loaf_c.png" alt="fresh loaf of bread" width="350" />
+                    </div>
+                    <details>
+                        <strong>Price:</strong> $99.00 - $350.00
+                        <p><strong>Description:</strong> If it can be made in an over, we can make it for your.
+                            Visit
+                            the <a href="contact.html">contact page</a> to make an inquiry.</p>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-tab">
+            <h1>Reach Out</h1>
+            <h3>How to find us</h3>
+            <p>We're open at our downtown location every day from 8am to 2pm</p>
+            <address>123 Main St, North Star, CA
+            </address>
+
+            <h3>Contact us</h3>
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="pickup_date">Pickup Date:</label>
+                        <input type="date" id="pickup_date" name="pickup_date">
+                    </div>
+
+                    <div>
+                        <label for="request_type">Request Type:</label>
+                        <select id="request_type" name="request_type">
+                            <option value="pre-order">Pre-order</option>
+                            <option value="general-question">General Question</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="item_details">Item Details:</label>
+                        <textarea id="item_details" name="item_details" rows="4"
+                            placeholder="Tell us what you are looking for..."></textarea>
+                    </div>
+
+                    <div>
+                        <label for="allergy_notes">Allergy Notes (if applicable):</label>
+                        <textarea id="allergy_notes" name="allergy_notes" rows="2"
+                            placeholder="List any known allergies."></textarea>
+                    </div>
+
+                    <button type="submit">Submit Message</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <footer> &copy; North Star Bakery Co. 1996-2026</footer>
+</body>
+
+</html>
